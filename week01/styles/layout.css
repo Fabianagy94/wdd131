@@ -1,0 +1,63 @@
+
+/* General page layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333333;
+    color: white;
+}
+
+header h1 {
+    padding: 20px;
+    margin: 0;
+}
+
+/* Navigation menu */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+/* Main content */
+main {
+    background-color: #cccccc;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Layout for Main Content and Aside */
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    min-height: 500px;
+}
+
+/* Aside */
+aside {
+    background-color: white;
+    padding: 20px;
+}
