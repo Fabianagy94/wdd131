@@ -1,0 +1,174 @@
+:root {
+  --primary-color: #002e5d;
+  --secondary-color: #0056b3;
+  --accent-color: #e8f4f8;
+  --text-color: #333333;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+/* About Me and Bogotá image layout */
+.about-location {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-location div {
+    flex: 2;
+    min-width: 0;
+}
+
+.about-location img {
+    flex: 0 0 250px;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-location img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.card hr {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+}
+
+.card:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.card:last-child ul {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+body {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.about-location {
+    gap: 2rem;
+}
+.card {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,.05);
+    overflow: hidden;
+}
+.card h3 {
+    text-align: center;
+    font-size: 1.3rem;
+}
