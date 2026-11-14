@@ -1,0 +1,48 @@
+
+
+/* Larger screens: tablets and desktop */
+@media screen and (min-width: 700px) {
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .site-title {
+        margin-bottom: 0;
+    }
+
+    /* Hide hamburger button */
+    #menu-button {
+        display: none;
+    }
+
+    /* Desktop navigation */
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 0.75rem 1rem;
+    }
+
+    /* Main content */
+    main {
+        max-width: 1200px;
+    }
+
+    /* Three-column gallery */
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    figure img {
+        height: 220px;
+    }
+}
