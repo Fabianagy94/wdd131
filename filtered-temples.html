@@ -1,0 +1,47 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a collection of temples around the world. Filter temples by age and size.">
+    <meta name="author" content="Fabiana Gonzalez Yanes">
+    <title>Temple Album | Filtered Temples</title>
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#" class="active" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="gallery-title">Home</h2>
+        <div id="temple-container" class="temple-grid"></div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | Fabiana Gonzalez Yanes | Colombia
+        </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
